@@ -7,28 +7,26 @@
   <link rel="shortcut icon" href="download.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class=" bg-gray-200">
-  <h1 class="text-center text-green-600  md:text-7xl text-4xl font-bold mt-3">Flower Bank</h1>
+<body class="bg-gradient-to-r from-green-200 to-blue-300 min-h-screen flex flex-col items-center px-4">
+  <h1 class="text-center text-white shadow-lg md:text-7xl text-4xl font-extrabold mt-10 p-4 bg-green-600 bg-opacity-80 rounded-lg w-full max-w-2xl">Flower Bank</h1>
 
-  <section class="grid justify-center mt-20  ">
-    <div class="bg-amber-50 p-10 space-y-7">
-      <div>
-        <p>Current Balance: <span id="CurrentBalance"></span></p>
+  <section class="grid justify-center mt-10 w-full max-w-xl">
+    <div class="bg-white bg-opacity-60 p-6 md:p-10 space-y-7 rounded-lg shadow-2xl w-full">
+      <div class="text-center text-lg font-semibold">
+        <p>Current Balance: <span id="CurrentBalance" class="text-green-600 font-bold">$0</span></p>
       </div>
-      <div class=" space-y-3 ">
-        <input type="text" placeholder="Enter your amount" id="addInput" class="bg-blue-200 p-1 rounded-md"> <br>
-        <button  class="bg-blue-600 p-1 w-full rounded-md text-white" id="addBtn">Add Money</button>
+      <div class="space-y-3">
+        <input type="number" placeholder="Enter your amount" id="addInput" class="bg-blue-100 bg-opacity-80 p-2 rounded-md w-full border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <button class="bg-blue-600 bg-opacity-80 hover:bg-blue-700 transition p-2 w-full rounded-md text-white font-semibold shadow-md" id="addBtn">Add Money</button>
       </div>
-      <div class=" space-y-3 ">
-        <input type="text" placeholder="Enter your amount" id="withdrawInput" class="bg-blue-200 p-1 rounded-md"> <br>
-        <button  class="bg-blue-600 p-1 w-full rounded-md text-white" id="withdrawBtn">Add Money</button>
+      <div class="space-y-3">
+        <input type="number" placeholder="Enter your amount" id="withdrawInput" class="bg-red-100 bg-opacity-80 p-2 rounded-md w-full border border-red-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+        <button class="bg-red-600 bg-opacity-80 hover:bg-red-700 transition p-2 w-full rounded-md text-white font-semibold shadow-md" id="withdrawBtn">Withdraw Money</button>
       </div>
-  
-      <div class=" space-y-3 ">
-        <button class="bg-gray-400 p-1 w-full rounded-md text-white" id="TransactionBtn">Transaction History</button>
-        <ul id="TransactionUl" ></ul>
+      <div class="space-y-3">
+        <button class="bg-gray-500 bg-opacity-80 hover:bg-gray-600 transition p-2 w-full rounded-md text-white font-semibold shadow-md" id="TransactionBtn">Transaction History</button>
+        <ul id="TransactionUl" class="hidden bg-gray-100 bg-opacity-80 p-3 rounded-lg shadow-md max-h-48 overflow-y-auto"></ul>
       </div>
-  
     </div>
   </section>
 
