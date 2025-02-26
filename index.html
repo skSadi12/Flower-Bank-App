@@ -7,8 +7,30 @@
   <link rel="shortcut icon" href="download.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class=" bg-gray-200">
+  <h1 class="text-center text-green-600  md:text-7xl text-4xl font-bold mt-3">Flower Bank</h1>
+
+  <section class="grid justify-center mt-20  ">
+    <div class="bg-amber-50 p-10 space-y-7">
+      <div>
+        <p>Current Balance: <span id="CurrentBalance"></span></p>
+      </div>
+      <div class=" space-y-3 ">
+        <input type="text" placeholder="Enter your amount" id="addInput" class="bg-blue-200 p-1 rounded-md"> <br>
+        <button  class="bg-blue-600 p-1 w-full rounded-md text-white" id="addBtn">Add Money</button>
+      </div>
+      <div class=" space-y-3 ">
+        <input type="text" placeholder="Enter your amount" id="withdrawInput" class="bg-blue-200 p-1 rounded-md"> <br>
+        <button  class="bg-blue-600 p-1 w-full rounded-md text-white" id="withdrawBtn">Add Money</button>
+      </div>
   
+      <div class=" space-y-3 ">
+        <button class="bg-gray-400 p-1 w-full rounded-md text-white" id="TransactionBtn">Transaction History</button>
+        <ul id="TransactionUl" ></ul>
+      </div>
+  
+    </div>
+  </section>
 
 
   <script type="module" src="index.js"></script>
