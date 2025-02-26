@@ -44,3 +44,7 @@ withdrawBtn.addEventListener("click", () => {
 
 
 
+TransactionBtn.addEventListener("click", () => {
+    TransactionUl.innerHTML = transactionHistory.map(tx => `<li>${tx}</li>`).join('');
+    TransactionUl.classList.toggle("hidden");
+  });
